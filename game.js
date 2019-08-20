@@ -1,11 +1,10 @@
-
   const grid_item = document.querySelectorAll('.grid_item');
   let turnedCard = false;
   let one;
   let two;
 
 
-    function turnCard(){
+  function turnCard(){
     this.classList.add('turn');
     console.log(this);
     if(!turnedCard){
@@ -40,7 +39,7 @@
       }, 600);
     }
 
-    (function shuffle(){
+      shuffle = (function shuffle(){
       grid_item.forEach(card => {
           let randPosition = Math.floor(Math.random() * 12);
           card.style.order = randPosition;
@@ -48,3 +47,11 @@
     })();
     
     grid_item.forEach(card => card.addEventListener('click', turnCard));
+    
+
+    module.exports = {
+      turnCard: turnCard,
+      matching: matching,
+      stopCards: stopCards,
+      turnBack: turnBack
+    }

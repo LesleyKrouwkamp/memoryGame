@@ -1,0 +1,25 @@
+{
+  "name": "memorygame",
+  "version": "1.0.0",
+  "description": "card matching",
+  "main": "game.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine gameSpec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LesleyKrouwkamp/memoryGame.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Lesley Krouwkamp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LesleyKrouwkamp/memoryGame/issues"
+  },
+  "homepage": "https://github.com/LesleyKrouwkamp/memoryGame#readme"
+  
+}
